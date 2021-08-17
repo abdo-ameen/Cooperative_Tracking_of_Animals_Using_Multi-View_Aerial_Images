@@ -6,4 +6,6 @@ The `ssd.pytorch` folder contains the code used to train a Single Shot Detector 
 
 The `test_ws` folder contains the ROS workspace we created to conduct the flight test in a simulation environment. The workspace was built with help from the example code available on the ROS documentation [website](http://wiki.ros.org/). The workspace contains the code that implements the four modules, detection, tracking, sensors and control.
 
-The code used to implement the UKF tracker was cloned from the e-book [rlabbe/Kalman-and-Bayesian-Filters-in-Python](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python) and adjusted to suite our application. It is embedded in `test_ws/src/tracking_pkg_3`.
+The code used to implement the UKF tracker was cloned from the e-book [rlabbe/Kalman-and-Bayesian-Filters-in-Python](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python) and adjusted to suite our application. It is embedded in `test_ws/src/tracking_pkg_3` and works as a ROS node.
+
+The `test_ws/src/detection_pkg_3` is basically the SSD inference code refactored to work as a ROS node. The `test_ws/src/sensor_pkg_3` implements the sensor model and the `test_ws/src/control_pkg` contains a single control node. The master AirSim node lies in `test_ws/src/airsim_ros_pkgs`. The rest are helping folders for the SSD code.

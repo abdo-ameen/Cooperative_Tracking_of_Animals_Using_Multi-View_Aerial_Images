@@ -1,0 +1,5 @@
+<launch>
+
+    <node type="control_node.py" name="control_node" pkg="control_pkg" />
+
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+
+    <node type="tracking_node_1.py" name="tracking_node_1" pkg="tracking_pkg_3" />
+    <node type="tracking_node_2.py" name="tracking_node_2" pkg="tracking_pkg_3" />
+    <node type="tracking_node_3.py" name="tracking_node_3" pkg="tracking_pkg_3" />
+
+</launch>

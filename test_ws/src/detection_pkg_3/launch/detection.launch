@@ -1,0 +1,7 @@
+<launch>
+
+    <node type="detection_node_1.py" name="detection_node_1" pkg="detection_pkg_3" />
+    <node type="detection_node_2.py" name="detection_node_2" pkg="detection_pkg_3" />
+    <node type="detection_node_3.py" name="detection_node_3" pkg="detection_pkg_3" />
+
+</launch>

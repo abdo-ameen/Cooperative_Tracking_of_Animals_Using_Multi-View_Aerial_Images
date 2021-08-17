@@ -1,0 +1,7 @@
+<launch>
+
+    <node type="sensor_node_1.py" name="sensor_node_1" pkg="sensor_pkg_3" />
+    <node type="sensor_node_2.py" name="sensor_node_2" pkg="sensor_pkg_3" />
+    <node type="sensor_node_3.py" name="sensor_node_3" pkg="sensor_pkg_3" />
+
+</launch>
